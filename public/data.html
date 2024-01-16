@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cronos Transaction Data</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Rest of your HTML content -->
+</body>
+</html>
+
+<body>
+    <h1>Cronos Transaction Data</h1>
+    <div id="data-container">
+    </div>
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('/fetch-data');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                const container = document.getElementById('data-container');
+
+                let html = '<h2>Transaction</h2>';
+                data.transfers.forEach(tx => {
+                    html += `<h3><a href="https://etherscan.io/tx/${tx.transactionHash}" target="_blank">Etherscan link</a></h3>`;
+
+                    html += `<ul>`;
+                    html += `<li>Transaction Hash: ${tx.transactionHash}</li>`;
+                    html += `<li>From: ${tx.from}</li>`;
+                    html += `<li>To: ${tx.to}</li>`;
+                    html += `<li>Value: ${tx.value}</li>`;
+                    html += `<li>Block Number: ${tx.blockNumber}</li>`;
+                    html += `<li>Block Timestamp: ${tx.blockTimestamp}</li>`;
+                    html += `</ul>`;
+                });
+
+                container.innerHTML = html;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('data-container').innerHTML = '<p>Error loading data</p>';
+            }
+        }
+
+        fetchData();
+    </script>
+</body>
+</html>
