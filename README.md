@@ -1,10 +1,12 @@
 # About
 
-This is an express app to display data about ENS domains, from the Graph.
+This is an express app to display data about the Cronos token, using the Graph.
 
 The relevant code is in server.js and public/displayData.html.
 
-![screen output](ens_graph.png)
+Right now it runs a query (viewable in query.js) showing the contents of one transaction.
+
+![screen output](cronos_graph.png)
 
 # How to Run
 
@@ -12,7 +14,7 @@ Note: you'll need an API key from the Graph. You'll also need to change the part
 
 You can run the app locally by running these commands:
 
-`cd ensgraph`
+`cd (directory)`
 
 `npm install`
 
