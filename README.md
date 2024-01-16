@@ -22,4 +22,4 @@ You can run the app locally by running these commands:
 
 `npm start`
 
-Go to localhost:3000 in your browser and you should see the data displayed.
+Go to localhost:3000 in your browser and you should see the data displayed for a single transaction, fetched on the basis of its transaction hash.
