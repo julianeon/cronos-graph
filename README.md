@@ -6,6 +6,8 @@ The relevant code is in server.js and public/data.html.
 
 Right now it runs a query (viewable in [graph_query.js](https://github.com/julianeon/cronos-graph/blob/main/graph_query.js)) showing the contents of one transaction.
 
+There are 2 working queries, as given in query_graph.js and alt_query.js.
+
 ![screen output](cronos_graph.png)
 
 # How to Run
