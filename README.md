@@ -4,7 +4,7 @@ This is an express app to display data about the Cronos token, using the Graph.
 
 The relevant code is in server.js and public/displayData.html.
 
-Right now it runs a query (viewable in query.js) showing the contents of one transaction.
+Right now it runs a query (viewable in [graph_query.js](https://github.com/julianeon/cronos-graph/blob/main/graph_query.js)) showing the contents of one transaction.
 
 ![screen output](cronos_graph.png)
 
