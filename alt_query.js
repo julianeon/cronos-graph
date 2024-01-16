@@ -1,7 +1,7 @@
 const graphqlQuery = {
   query: `
 {
-  transfers(where: { transactionHash: "0x0000000" }) {
+  transfers(where: { blockNumber: 16940391 }) {
     id
     from
     to
