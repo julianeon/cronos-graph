@@ -31,7 +31,7 @@ import('node-fetch').then(fetchModule => {
       }
 
       const jsondata = await response.json();
-      console.log(JSON.stringify(jsondata, null, 2)); 
+      //console.log(JSON.stringify(jsondata, null, 2)); 
       res.send(jsondata.data);
     } catch (error) {
       console.error('Error fetching data:', error);
