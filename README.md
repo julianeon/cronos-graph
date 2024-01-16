@@ -12,7 +12,7 @@ There are 2 working queries, as given in graph_query.js and alt_query.js.
 
 # How to Run
 
-Note: you'll need an API key from the Graph. You'll also need to change the part of the code where I specify the API key in server.js.
+Note: you'll need an API key from the Graph. You'll also need to change the part of the code where I specify the API key in server.js. In my code, it is taken from an environment variable stored in GRAPH_API_KEY.
 
 You can run the app locally by running these commands:
 
@@ -22,4 +22,4 @@ You can run the app locally by running these commands:
 
 `npm start`
 
-Go to localhost:3000 and you should see the data displayed.
+Go to localhost:3000 in your browser and you should see the data displayed.
