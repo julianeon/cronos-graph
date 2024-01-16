@@ -1,6 +1,6 @@
 # About
 
-This is an express app to display data about the Cronos token (viewable on Etherscan [here](https://etherscan.io/address/0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b)), using the Graph.
+This is an express app to display data about the Cronos token (viewable on Etherscan [here](https://etherscan.io/address/0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b)), using a subgraph dedicated to the Cronos token.
 
 The relevant code is in server.js and public/data.html.
 
