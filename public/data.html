@@ -20,8 +20,8 @@
                 const container = document.getElementById('data-container');
 
                 let html = '<h2>Transaction</h2>';
+                html += '<p>Returned from the Cronos subgraph:</p>'
                 data.transfers.forEach(tx => {
-                    html += `<h3><a href="https://etherscan.io/tx/${tx.transactionHash}" target="_blank">Etherscan link</a></h3>`;
 
                     html += `<ul>`;
                     html += `<li>Transaction Hash: ${tx.transactionHash}</li>`;
@@ -31,6 +31,7 @@
                     html += `<li>Block Number: ${tx.blockNumber}</li>`;
                     html += `<li>Block Timestamp: ${tx.blockTimestamp}</li>`;
                     html += `</ul>`;
+                    html += `<h3><a href="https://etherscan.io/tx/${tx.hash}" target="_blank">Etherscan link</a></h3>`;
                 });
 
                 container.innerHTML = html;
