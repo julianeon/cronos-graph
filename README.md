@@ -23,3 +23,5 @@ You can run the app locally by running these commands:
 `npm start`
 
 Go to localhost:3000 in your browser and you should see the data displayed for a single transaction, fetched on the basis of its transaction hash.
+
+You can always go here, to the Cronos token smart contract address on Etherscan, find a different transaction, and change the transactionHash part of the query in graph_query.js to see a different transaction.
