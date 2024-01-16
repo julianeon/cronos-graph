@@ -16,3 +16,5 @@ const graphqlQuery = {
 
 module.exports = graphqlQuery;
 
+//could also use transactionHash: "0x43185dd560cbcc4d7201af33b905df8e2ef7475dd63882c84559bc3422d981e4" 
+
