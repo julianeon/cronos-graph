@@ -12,7 +12,7 @@
     <script>
         async function fetchData() {
             try {
-                const response = await fetch('/fetch-data');
+                const response = await fetch('/txn-data');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -32,6 +32,7 @@
                     html += `<li>Block Timestamp: ${tx.blockTimestamp}</li>`;
                     html += `</ul>`;
                     html += `<h3><a href="https://etherscan.io/tx/${tx.hash}" target="_blank">Etherscan link</a></h3>`;
+                    html += `<p><a href="info.html" target="_blank">see "info"</a></p>`;
                 });
 
                 container.innerHTML = html;
