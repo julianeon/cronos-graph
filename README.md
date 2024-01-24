@@ -6,7 +6,7 @@ The relevant code is in server.js, public/data.html, public/info.html, graph_que
 
 You can view the homepage to see a query (viewable in [graph_query.js](graph_query.js)) showing the contents of one transaction, which is displayed using HTML there and at /data.html ([screenshot](tx_page.png)).
 
-You can also visit /info.html to see the info query (viewable in [info_query.js](info_query.js)) showing hardcoded strings showing info about the project ([screenshot](info_page.png)).
+You can also visit /info.html to see the info query (viewable in [info_query.js](info_query.js)), which is meant to show info about the project ([screenshot](info_page.png)).
 
 All the queries, as given in [graph_query.js](graph_query.js), [alt_query.js](alt_query.js) and [info_query.js](info_query.js), can be tested out.
 
