@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Info Data</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Info Data</h1>
+    <div id="data-container">
+    </div>
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('/info-data');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                const container = document.getElementById('data-container');
+
+                let html = '<h2>Info</h2>';
+                html += '<p>Returned from the Cronos subgraph:</p>'
+                data.infos.forEach(info => {
+
+                    html += `<ul>`;
+                    html += `<li>Transaction Hash: ${info.id}</li>`;
+                    html += `<li>Title: ${info.title}</li>`;
+                    html += `<li>Summary: ${info.summary}</li>`;
+                    html += `<li>Description: ${info.description}</li>`;
+                    html += `<li>License: ${info.license}</li>`;
+                    html += `</ul>`;
+                    html += `<p><a href="/">home</a></p>`;
+                });
+
+                container.innerHTML = html;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('data-container').innerHTML = '<p>Error loading data</p>';
+            }
+        }
+
+        fetchData();
+    </script>
+</body>
+</html>
