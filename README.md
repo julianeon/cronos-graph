@@ -8,7 +8,7 @@ You can view the homepage to see a query (viewable in [graph_query.js](https://g
 
 You can also visit info.html to see the info query (viewable in [info_query.js](https://github.com/julianeon/cronos-graph/blob/main/info_query.js)) showing hardcoded strings showing info about the project ([screenshot](info_page.png)).
 
-All the queries, as given in [graph_query.js](https://github.com/julianeon/cronos-graph/blob/main/graph_query.js), [alt_query.js](https://github.com/julianeon/cronos-graph/blob/main/alt_query.js) and [info_query.js](https://github.com/julianeon/cronos-graph/blob/main/info_query.js), can be tested out.
+All the queries, as given in [graph_query.js](graph_query.js), [alt_query.js](https://github.com/julianeon/cronos-graph/blob/main/alt_query.js) and [info_query.js](https://github.com/julianeon/cronos-graph/blob/main/info_query.js), can be tested out.
 
 ![screen output](cronos_graph.png)
 
